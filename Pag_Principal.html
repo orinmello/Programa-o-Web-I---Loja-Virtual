@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+    <!-- METAS & TAGS -->
+    <meta charset="utf-8">
+    <meta name="description" content="Trabalho 2º Bimestre - Programação WEB I">
+    <meta name="author" content="Leonardo Mello & Maria Luiza">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <title>CriCriações</title>
+    </head>
+    <body style="min-width: 372px;">
+    <!--BARRA DE NAVEGAÇÃO - INICIO-->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark border-bottom shadow-sm mb-3 sticky-top" style="background-color: #025159;">
+        <div class="container" >
+            <a href="#" class="navbar-brand"><strong>CriCriações</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="/Pag_Principal.html" class="nav-link text-white">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white">Suporte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white">
+                            <svg id="carrinho" class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="bi.svg#cart2"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--CABEÇALHO/ SLIDE - INICIO-->
+    <header class="container">
+        <div id="carouselMain" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner" >
+                <div class="carousel-item active text-center" data-interval="3000">
+                    <img src="/img/img_slides/slide01.jpg" alt="" class="img-fluid d-none d-md-block">
+                    <img src="/img/img_slides/slide01.jpg" alt="" class="img-fluid d-block d-md-none">
+                </div>
+                <div class="carousel-item text-center" data-interval="3000">
+                    <img src="/img/img_slides/slide01.jpg" alt="" class="img-fluid d-none d-md-block">
+                    <img src="/img/img_slides/slide01.jpg" alt="" class="img-fluid d-block d-md-none">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <hr class="mt-3">
+        </div>
+    </header>
+    <!--CONTEÚDO/ CARDS-->
+    <main class="container">
+        <div id="pagOrdem" class="row">
+            <div id="catProdutos" class="col-12 col-md-5">
+                <div class="justify-content-center justify-content-md-start mb-3">
+                    <h3 style="text-align: center;">Catálogo de Produtos</h3>
+                </div>
+            </div>
+            <div id="Pag" class="col-12 col-md-7">
+                <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+                    <form class="d-inline-block" style="margin-left: 1rem;">
+                        <select class="form-select form-select-sm">
+                            <option>Ordenar pelo nome</option>
+                            <option>Ordenar pelo menor preço</option>
+                            <option>Ordenar pelo maior preço</option>
+                        </select>
+                    </form>
+                    <nav class="d-inline-block">
+                        <ul class="pagination pagination-sm my-0">
+                            <li class="page-item disabled">
+                                <span class="page-link">Anterior</span>
+                            </li>
+                            <li class="page-item active" aria-current="page">
+                                <span class="page-link">1</span>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Proxima</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <br class="mt-3">
+        <div id="lisCatalogo" class="row g-3">
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                <div class="card text-center bg-light">
+                    <img src="/img/img_produtos/Bolsa_01_Vermelha.jpeg" alt="Bolsa Vermelha" class="card-img-top">
+                    <div class="card-header">R$ 50,00</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Bolsa Vermelha</h5>
+                        <p class="card-text">Essa é uma bolsa vermelha feita pela CriCriações e comercializada por ela também.</p>
+                    </div>
+                    <div class="card-footer">
+                        <form class="d-block">
+                            <button class="btn btn-success">
+                                Adicionar aos favoritos
+                            </button>
+                        </form>
+                        <small class="text-danger">2 em estoque</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                <div class="card text-center bg-light">
+                    <img src="/img/img_produtos/Bolsa_02_Rosa.jpeg" alt="Bolsa Rosa" class="card-img-top">
+                    <div class="card-header">R$ 50,00</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Bolsa Rosa</h5>
+                        <p class="card-text">Essa é uma bolsa rosa feita pela CriCriações e comercializada por ela também.</p>
+                    </div>
+                    <div class="card-footer">
+                        <form class="d-block">
+                            <button class="btn btn-success">
+                                Adicionar aos favoritos
+                            </button>
+                        </form>
+                        <small class="text-danger">1 em estoque</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                <div class="card text-center bg-light">
+                    <img src="/img/img_produtos/Bolsa_03_Preta.jpeg" alt="Bolsa Preta" class="card-img-top">
+                    <div class="card-header">R$ 50,00</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Bolsa Preta</h5>
+                        <p class="card-text">Essa é uma bolsa preta feita pela CriCriações e comercializada por ela também.</p>
+                    </div>
+                    <div class="card-footer">
+                        <form class="d-block">
+                            <button class="btn btn-success">
+                                Adicionar aos favoritos
+                            </button>
+                        </form>
+                        <small class="text-danger">5 em estoque</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                <div class="card text-center bg-light">
+                    <img src="/img/img_produtos/Bolsa_04_Azul.jpeg" alt="Bolsa Azul" class="card-img-top">
+                    <div class="card-header">R$ 50,00</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Bolsa Azul</h5>
+                        <p class="card-text">Essa é uma bolsa azul feita pela CriCriações e comercializada por ela também.</p>
+                    </div>
+                    <div class="card-footer">
+                        <form class="d-block">
+                            <button class="btn btn-success">
+                                Adicionar aos favoritos
+                            </button>
+                        </form>
+                        <small class="text-danger">3 em estoque</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                <div class="card text-center bg-light">
+                    <img src="/img/img_produtos/Bolsa_05_Marrom.jpeg" alt="Bolsa Marrom" class="card-img-top">
+                    <div class="card-header">R$ 50,00</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Bolsa Marrom</h5>
+                        <p class="card-text">Essa é uma bolsa marrom feita pela CriCriações e comercializada por ela também.</p>
+                    </div>
+                    <div class="card-footer">
+                        <form class="d-block">
+                            <button class="btn btn-success">
+                                Adicionar aos favoritos
+                            </button>
+                        </form>
+                        <small class="text-danger">3 em estoque</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                <div class="card text-center bg-light">
+                    <img src="/img/img_produtos/Bolsa_06_Branca.jpeg" alt="Bolsa Branca" class="card-img-top">
+                    <div class="card-header">R$ 50,00</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Bolsa Branca</h5>
+                        <p class="card-text">Essa é uma bolsa branca feita pela CriCriações e comercializada por ela também.</p>
+                    </div>
+                    <div class="card-footer">
+                        <form class="d-block">
+                            <button class="btn btn-success">
+                                Adicionar aos favoritos
+                            </button>
+                        </form>
+                        <small class="text-danger">6 em estoque</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                <div class="card text-center bg-light">
+                    <img src="/img/img_produtos/Bolsa_01_Vermelha.jpeg" alt="Bolsa Vermelha" class="card-img-top">
+                    <div class="card-header">R$ 50,00</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Bolsa Vermelha</h5>
+                        <p class="card-text">Essa é uma bolsa vermelha feita pela CriCriações e comercializada por ela também.</p>
+                    </div>
+                    <div class="card-footer">
+                        <form class="d-block">
+                            <button class="btn btn-success">
+                                Adicionar aos favoritos
+                            </button>
+                        </form>
+                        <small class="text-danger">2 em estoque</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                <div class="card text-center bg-light">
+                    <img src="/img/img_produtos/Bolsa_02_Rosa.jpeg" alt="Bolsa Rosa" class="card-img-top">
+                    <div class="card-header">R$ 50,00</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Bolsa Rosa</h5>
+                        <p class="card-text">Essa é uma bolsa rosa feita pela CriCriações e comercializada por ela também.</p>
+                    </div>
+                    <div class="card-footer">
+                        <form class="d-block">
+                            <button class="btn btn-success">
+                                Adicionar aos favoritos
+                            </button>
+                        </form>
+                        <small class="text-danger">1 em estoque</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                <div class="card text-center bg-light">
+                    <img src="/img/img_produtos/Bolsa_03_Preta.jpeg" alt="Bolsa Preta" class="card-img-top">
+                    <div class="card-header">R$ 50,00</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Bolsa Preta</h5>
+                        <p class="card-text">Essa é uma bolsa preta feita pela CriCriações e comercializada por ela também.</p>
+                    </div>
+                    <div class="card-footer">
+                        <form class="d-block">
+                            <button class="btn btn-success">
+                                Adicionar aos favoritos
+                            </button>
+                        </form>
+                        <small class="text-danger">5 em estoque</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                <div class="card text-center bg-light">
+                    <img src="/img/img_produtos/Bolsa_04_Azul.jpeg" alt="Bolsa Azul" class="card-img-top">
+                    <div class="card-header">R$ 50,00</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Bolsa Azul</h5>
+                        <p class="card-text">Essa é uma bolsa azul feita pela CriCriações e comercializada por ela também.</p>
+                    </div>
+                    <div class="card-footer">
+                        <form class="d-block">
+                            <button class="btn btn-success">
+                                Adicionar aos favoritos
+                            </button>
+                        </form>
+                        <small class="text-danger">3 em estoque</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                <div class="card text-center bg-light">
+                    <img src="/img/img_produtos/Bolsa_05_Marrom.jpeg" alt="Bolsa Marrom" class="card-img-top">
+                    <div class="card-header">R$ 50,00</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Bolsa Marrom</h5>
+                        <p class="card-text">Essa é uma bolsa marrom feita pela CriCriações e comercializada por ela também.</p>
+                    </div>
+                    <div class="card-footer">
+                        <form class="d-block">
+                            <button class="btn btn-success">
+                                Adicionar aos favoritos
+                            </button>
+                        </form>
+                        <small class="text-danger">3 em estoque</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                <div class="card text-center bg-light">
+                    <img src="/img/img_produtos/Bolsa_06_Branca.jpeg" alt="Bolsa Branca" class="card-img-top">
+                    <div class="card-header">R$ 50,00</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Bolsa Branca</h5>
+                        <p class="card-text">Essa é uma bolsa branca feita pela CriCriações e comercializada por ela também.</p>
+                    </div>
+                    <div class="card-footer">
+                        <form class="d-block">
+                            <button class="btn btn-success">
+                                Adicionar aos favoritos
+                            </button>
+                        </form>
+                        <small class="text-danger">6 em estoque</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br class="mt-3">
+    </main>
+    <!--RODAPÉ - INICIO-->
+    <footer id="rodape" class="border-top sticky-bottom text-muted bg-light">
+        <div class="container">
+        <!--SEGUNDO RODAPÉ-->
+            <div id="redes-socias" class="row row justify-content-md-center py-3">
+                <div class="col col-lg-4 text-center  text-md-left">
+                    <a href="#" class="text-dark" title="facebook">
+                        <svg id="facebook" class="bi" width="24" height="24" fill="#3a5998">
+                            <use xlink:href="bi.svg#facebook"/> 
+                        </svg>
+                    </a>
+                </div>
+                <div class="col col-lg-4 text-center">
+                    <a href="#" class="text-dark" title="instagram">
+                        <svg class="instagram" width="24" height="24" fill="#e1306c">
+                            <use xlink:href="bi.svg#instagram"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="col col-lg-4 text-center text-md-right">
+                    <a href="#" class="text-dark" title="whatsapp">
+                        <svg class="whatsapp" width="24" height="24" fill="#21805E">
+                            <use xlink:href="bi.svg#whatsapp"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        <!--PRIMEIRO RODAPÉ-->
+            <div id="pol-dev-cop" class="row py-4">
+                <div class="col-12 col-md-4 text-center">
+                    <a href="/Pag_Politica-Privacidade/Pag_Termo-Políticas-Site.html" class="text-decoration-none text-dark">Termos e Políticas do Site</a>
+                </div>
+                <div class="col-12 col-md-4 text-center text-md-left">
+                    &copy; 2021 - CriCriações
+                </div>
+                <div class="col-12 col-md-4 text-center text-md-right">
+                    <a href="/Pag_Desenvolvedores/Pag_Desenvolvedores.html" class="text-decoration-none text-dark">Desenvolvedores</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+        <!--PAGINA FINALIZADA - SEMPRE USAR COMO MODELO PARA A PROXIMA-->
+</html>
