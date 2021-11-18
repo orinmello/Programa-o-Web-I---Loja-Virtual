@@ -1,0 +1,73 @@
+/*Barra de Navegação*/
+#navbar{
+    background: linear-gradient(to left, #008091, #023c42);
+}
+#navbar .nav-item{
+    margin-right: 1em;
+}
+#navbar .nav-item a{
+    padding: 0.6em
+    color: #025159;
+}
+#navbar .nav-item:hover{
+    border-radius: 20px;
+    background: #013a41;
+}
+@media screen and (max-width: 990px){
+    #navbar .nav-item a{
+        padding: 0.6em;
+        color: #025159;
+    }
+    #navbar .nav-item:hover{
+        border-radius: 20px;
+        background: #013a41;
+    }
+}
+
+
+/*Cards de Produtos*/
+#listCatalogo .card{
+    padding: 1.5em .5em .5em;
+    border-radius: 1em;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+#listCatalogo .card:hover{
+    transform: translateY(-15px);
+    transition: transform .3s;
+}
+#listCatalogo img{
+    width: 95%;
+    border-radius: 0.5em;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+#listCatalogo .btn{
+    border-radius:2em;
+    background-color: teal;
+    color: #ffffff;
+    padding: .5em 1.5em;
+}
+#listCatalogo .btn:hover {
+    background-color: rgba(0, 128, 128, 0.7);
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/*Cards dos Desenvolvedores*/
+#Desenvolvedores .card{
+    padding: 1.5em .5em .5em;
+    border-radius: 1em;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+#Desenvolvedores .card:hover{
+    transform: translateY(-15px);
+    transition: transform .3s;
+}
+#Desenvolvedores img{
+    width: 95%;
+    border-radius: 0.5em;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+}

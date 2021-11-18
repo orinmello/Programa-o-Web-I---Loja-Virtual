@@ -7,13 +7,14 @@
     <meta name="author" content="Leonardo Mello & Maria Luiza">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css"> 
+    <link href="/style.css" rel="stylesheet" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.css" rel="stylesheet">
     <link rel="shortcut icon" href="#" type="image/x-icon">
     <title>Desenvolvedores</title>
     </head>
     <body style="min-width: 372px;">
     <!--BARRA DE NAVEGAÇÃO - INICIO-->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark border-bottom shadow-sm mb-3 sticky-top" style="background-color: #025159;">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark border-bottom shadow-sm mb-3 sticky-top">
         <div class="container" >
             <a href="#" class="navbar-brand"><strong>CriCriações</strong></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,10 +31,10 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link text-white">Sobre</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-white">
-                            <svg id="carrinho" class="bi" width="24" height="24" fill="currentColor">
-                                <use xlink:href="bi.svg#cart2"/>
+                    <li id="favoritos" class="nav-item">
+                        <a href="#"  class="nav-link text-white">
+                            <svg class="bi" width="22" height="22" fill="currentColor">
+                                <use xlink:href="bi.svg#heart-fill"/>
                             </svg>
                         </a>
                     </li>
@@ -50,7 +51,7 @@
     </header>
     <!--CONTEÚDO/ CARDS-->
     <main id="Desenvolvedores" class="container-fluid">
-        <div class="album py-5 bg-light">
+        <div class="album py-5">
             <div class="container">
                 <div class="row">
                     <div id="Leonardo_Mello" class="col-sm-6">
@@ -123,18 +124,18 @@
         <!--PRIMEIRO RODAPÉ-->
             <div id="pol-dev-cop" class="row py-4">
                 <div class="col-12 col-md-4 text-center">
-                    <a href="/Pag_Politica-Privacidade/Pag_Termo-Políticas-Site.html" class="text-decoration-none text-dark">Termos e Políticas do Site</a>
+                    <a href="/Pag_Termo-Políticas-Site.html" class="text-decoration-none text-dark">Termos e Políticas do Site</a>
                 </div>
                 <div class="col-12 col-md-4 text-center text-md-left">
                     &copy; 2021 - CriCriações
                 </div>
                 <div class="col-12 col-md-4 text-center text-md-right">
-                    <a href="/Pag_Desenvolvedores/Pag_Desenvolvedores.html" class="text-decoration-none text-dark">Desenvolvedores</a>
+                    <a href="/Pag_Desenvolvedores.html" class="text-decoration-none text-dark">Desenvolvedores</a>
                 </div>
             </div>
         </div>
     </footer>
     <!-- Bootstrap JS -->
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.js"></script>
     </body>
 </html>
